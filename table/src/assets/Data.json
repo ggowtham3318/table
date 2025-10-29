@@ -1,0 +1,144 @@
+{
+    "data": [{
+    "id": 1,
+    "name": "Virat Kohli",
+    "nickname": "KingKohli",
+    "team": "Royal Challengers Bengaluru",
+    "role": "Batsman",
+    "stats": {
+      "matches": 275,
+      "runs": 8676,
+      "average": 58.2,
+      "strike_rate": 138.5,
+      "centuries": 7
+    }
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharma",
+    "nickname": "Hitman",
+    "team": "Mumbai Indians",
+    "role": "Batsman",
+    "stats": {
+      "matches": 243,
+      "runs": 6500,
+      "average": 46.3,
+      "strike_rate": 134.7,
+      "centuries": 5
+    }
+  },
+  {
+    "id": 3,
+    "name": "MS Dhoni",
+    "nickname": "CaptainCool",
+    "team": "Chennai Super Kings",
+    "role": "Wicketkeeper-Batsman",
+    "stats": {
+      "matches": 250,
+      "runs": 5082,
+      "average": 39.5,
+      "strike_rate": 137.8,
+      "centuries": 0
+    }
+  },
+  {
+    "id": 4,
+    "name": "AB de Villiers",
+    "nickname": "Mr360",
+    "team": "Royal Challengers Bengaluru",
+    "role": "Batsman",
+    "stats": {
+      "matches": 220,
+      "runs": 5162,
+      "average": 40.9,
+      "strike_rate": 151.7,
+      "centuries": 3
+    }
+  },
+  {
+    "id": 5,
+    "name": "Hardik Pandya",
+    "nickname": "KungFuPandya",
+    "team": "Mumbai Indians",
+    "role": "All-Rounder",
+    "stats": {
+      "matches": 142,
+      "runs": 2300,
+      "average": 28.2,
+      "strike_rate": 142.6,
+      "centuries": 1
+    }
+  },
+  {
+    "id": 6,
+    "name": "Rashid Khan",
+    "nickname": "Rash",
+    "team": "Gujarat Titans",
+    "role": "Bowler",
+    "stats": {
+      "matches": 109,
+      "runs": 531,
+      "average": 19.2,
+      "strike_rate": 127.0,
+      "centuries": 0
+    }
+  },
+  {
+    "id": 7,
+    "name": "Jasprit Bumrah",
+    "nickname": "Boom",
+    "team": "Mumbai Indians",
+    "role": "Bowler",
+    "stats": {
+      "matches": 133,
+      "runs": 79,
+      "average": 8.7,
+      "strike_rate": 100.0,
+      "centuries": 0
+    }
+  },
+  {
+    "id": 8,
+    "name": "Kane Williamson",
+    "nickname": "SteadyKane",
+    "team": "Sunrisers Hyderabad",
+    "role": "Batsman",
+    "stats": {
+      "matches": 89,
+      "runs": 2101,
+      "average": 36.0,
+      "strike_rate": 126.0,
+      "centuries": 1
+    }
+  },
+  {
+    "id": 9,
+    "name": "Shubman Gill",
+    "nickname": "Gill",
+    "team": "Gujarat Titans",
+    "role": "Batsman",
+    "stats": {
+      "matches": 91,
+      "runs": 2790,
+      "average": 38.0,
+      "strike_rate": 135.0,
+      "centuries": 3
+    }
+  },
+  {
+    "id": 10,
+    "name": "Pat Cummins",
+    "nickname": "Cummo",
+    "team": "Sunrisers Hyderabad",
+    "role": "Bowler",
+    "stats": {
+      "matches": 56,
+      "runs": 457,
+      "average": 16.3,
+      "strike_rate": 153.1,
+      "centuries": 0
+    }
+  }
+  
+    ]
+}

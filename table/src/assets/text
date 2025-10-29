@@ -1,0 +1,680 @@
+app.jsx 
+
+
+
+import './Table.css'
+
+import './App.css'
+
+import Table from './Emp_Data'
+
+import Customer from './Customer'
+
+
+
+export default function App() {
+
+
+
+
+
+  return (
+
+    <>
+
+    <div>
+
+      <Table/>
+
+      <Customer/>
+
+    </div>
+
+    </>
+
+  )
+
+}
+
+
+
+
+
+
+
+table.jsx'
+
+
+
+
+
+export default function Table({ data, headers }) {
+
+  if (!data || data.length === 0) {
+
+    return <p>No data available</p>;
+
+  }
+
+
+
+  return (
+
+    <table
+
+      style={{
+
+        width: '100%',
+
+        borderCollapse: 'collapse',
+
+        marginTop: '20px',
+
+        backgroundColor: '#fff',
+
+        borderRadius: '10px',
+
+        overflow: 'hidden',
+
+        boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+
+      }}
+
+    >
+
+      <thead style={{ backgroundColor: '#4a90e2', color: '#fff' }}>
+
+        <tr>
+
+          {headers.map((header, i) => (
+
+            <th
+
+              key={i}
+
+              style={{
+
+                padding: '12px',
+
+                textAlign: 'left',
+
+                fontWeight: 'bold'
+
+              }}
+
+            >
+
+              {header}
+
+            </th>
+
+          ))}
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        {data.map((row, i) => (
+
+          <tr
+
+            key={i}
+
+            style={{
+
+              backgroundColor: i % 2 === 0 ? '#f9f9f9' : '#ffffff',
+
+              transition: 'background 0.2s ease'
+
+            }}
+
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#e6f2ff')}
+
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = i % 2 === 0 ? '#f9f9f9' : '#ffffff')}
+
+          >
+
+            {headers.map((header, j) => (
+
+              <td
+
+                key={j}
+
+                style={{
+
+                  padding: '10px 12px',
+
+                  borderBottom: '1px solid #ddd'
+
+                }}
+
+              >
+
+                {row[header] ?? '-'}
+
+              </td>
+
+            ))}
+
+          </tr>
+
+        ))}
+
+      </tbody>
+
+    </table>
+
+  );
+
+}
+
+
+
+
+
+
+
+customer.jsx
+
+
+
+
+
+import Table from './Table';
+
+
+
+export default function Table1() {
+
+  const data = [
+
+    {
+
+      "user_names": "Dinesh Kumar",
+
+      "Department": "IT",
+
+      "Role": "Full Stack Developer",
+
+      "Salary": 82000,
+
+      "Joined": "2023-02-14",
+
+      "Summa": "123230"
+
+    },
+
+    {
+
+      "user_names": "Kavya Raj",
+
+      "Department": "HR",
+
+      "Role": "HR Executive",
+
+      "Salary": 48000,
+
+      "Joined": "2021-09-20"
+
+    },
+
+    {
+
+      "user_names": "Mohan Raj",
+
+      "Department": "Admin",
+
+      "Role": "Office Manager",
+
+      "Salary": 53000,
+
+      "Joined": "2019-06-12"
+
+    },
+
+    {
+
+      "user_names": "Vigneshwaran P",
+
+      "Department": "IT",
+
+      "Role": "Data Analyst",
+
+      "Salary": 72000,
+
+      "Joined": "2023-01-10"
+
+    },
+
+    {
+
+      "user_names": "Lavanya S",
+
+      "Department": "Marketing",
+
+      "Role": "Digital Marketer",
+
+      "Salary": 58000,
+
+      "Joined": "2022-11-02"
+
+    },
+
+    {
+
+      "user_names": "Rajesh Kannan",
+
+      "Department": "Operations",
+
+      "Role": "Operations Lead",
+
+      "Salary": 87000,
+
+      "Joined": "2020-03-28"
+
+    },
+
+    {
+
+      "user_names": "Meena Devi",
+
+      "Department": "Finance",
+
+      "Role": "Accountant",
+
+      "Salary": 61000,
+
+      "Joined": "2021-07-17"
+
+    },
+
+    {
+
+      "user_names": "Saravanan M",
+
+      "Department": "Sales",
+
+      "Role": "Regional Sales Head",
+
+      "Salary": 92000,
+
+      "Joined": "2018-12-05"
+
+    },
+
+    {
+
+      "user_names": "Gayathri V",
+
+      "Department": "Support",
+
+      "Role": "Customer Support",
+
+      "Salary": 45000,
+
+      "Joined": "2023-05-11"
+
+    },
+
+    {
+
+      "user_names": "Karthik R",
+
+      "Department": "IT",
+
+      "Role": "Backend Developer",
+
+      "Salary": 75000,
+
+      "Joined": "2022-03-22"
+
+    },
+
+    {
+
+      "user_names": "Revathi S",
+
+      "Department": "HR",
+
+      "Role": "Talent Acquisition",
+
+      "Salary": 52000,
+
+      "Joined": "2021-10-30"
+
+    },
+
+    {
+
+      "user_names": "Divya Dharshini",
+
+      "Department": "CS",
+
+      "Role": "Junior Developer",
+
+      "Salary": 59000,
+
+      "Joined": "2023-09-08"
+
+    },
+
+    {
+
+      "user_names": "Aravind Raj",
+
+      "Department": "Sales",
+
+      "Role": "Field Executive",
+
+      "Salary": 50000,
+
+      "Joined": "2022-05-09"
+
+    },
+
+    {
+
+      "user_names": "Nithya Shree",
+
+      "Department": "Design",
+
+      "Role": "Graphic Designer",
+
+      "Salary": 62000,
+
+      "Joined": "2023-07-21"
+
+    },
+
+    {
+
+      "user_names": "Sathish Kumar",
+
+      "Department": "Support",
+
+      "Role": "Tech Support",
+
+      "Salary": 53000,
+
+      "Joined": "2021-08-13"
+
+    }
+
+  ];
+
+
+
+  const headers = Object.keys(data[0]);
+
+
+
+  return (
+
+    <div style={{ padding: '20px' }}>
+
+      <h2 style={{ textAlign: 'center' }}>Employee Details</h2>
+
+      <Table data={data} headers={headers} />
+
+    </div>
+
+  );
+
+}
+
+
+
+
+
+
+
+emp-data.jsx
+
+
+
+
+
+import Table from './Table';
+
+
+
+export default function Table1() {
+
+  const data = [
+
+    {
+
+      "Emp_names": "Dinesh Kumar",
+
+      "Department": "IT",
+
+      "Role": "Full Stack Developer",
+
+      "Salary": 82000,
+
+      "Joined": "2023-02-14",
+
+      "Summa": "123230"
+
+    },
+
+    {
+
+      "Emp_names": "Kavya Raj",
+
+      "Department": "HR",
+
+      "Role": "HR Executive",
+
+      "Salary": 48000,
+
+      "Joined": "2021-09-20"
+
+    },
+
+    {
+
+      "Emp_names": "Mohan Raj",
+
+      "Department": "Admin",
+
+      "Role": "Office Manager",
+
+      "Salary": 53000,
+
+      "Joined": "2019-06-12"
+
+    },
+
+    {
+
+      "Emp_names": "Vigneshwaran P",
+
+      "Department": "IT",
+
+      "Role": "Data Analyst",
+
+      "Salary": 72000,
+
+      "Joined": "2023-01-10"
+
+    },
+
+    {
+
+      "Emp_names": "Lavanya S",
+
+      "Department": "Marketing",
+
+      "Role": "Digital Marketer",
+
+      "Salary": 58000,
+
+      "Joined": "2022-11-02"
+
+    },
+
+    {
+
+      "Emp_names": "Rajesh Kannan",
+
+      "Department": "Operations",
+
+      "Role": "Operations Lead",
+
+      "Salary": 87000,
+
+      "Joined": "2020-03-28"
+
+    },
+
+    {
+
+      "Emp_names": "Meena Devi",
+
+      "Department": "Finance",
+
+      "Role": "Accountant",
+
+      "Salary": 61000,
+
+      "Joined": "2021-07-17"
+
+    },
+
+    {
+
+      "Emp_names": "Saravanan M",
+
+      "Department": "Sales",
+
+      "Role": "Regional Sales Head",
+
+      "Salary": 92000,
+
+      "Joined": "2018-12-05"
+
+    },
+
+    {
+
+      "Emp_names": "Gayathri V",
+
+      "Department": "Support",
+
+      "Role": "Customer Support",
+
+      "Salary": 45000,
+
+      "Joined": "2023-05-11"
+
+    },
+
+    {
+
+      "Emp_names": "Karthik R",
+
+      "Department": "IT",
+
+      "Role": "Backend Developer",
+
+      "Salary": 75000,
+
+      "Joined": "2022-03-22"
+
+    },
+
+    {
+
+      "Emp_names": "Revathi S",
+
+      "Department": "HR",
+
+      "Role": "Talent Acquisition",
+
+      "Salary": 52000,
+
+      "Joined": "2021-10-30"
+
+    },
+
+    {
+
+      "Emp_names": "Divya Dharshini",
+
+      "Department": "CS",
+
+      "Role": "Junior Developer",
+
+      "Salary": 59000,
+
+      "Joined": "2023-09-08"
+
+    },
+
+    {
+
+      "Emp_names": "Aravind Raj",
+
+      "Department": "Sales",
+
+      "Role": "Field Executive",
+
+      "Salary": 50000,
+
+      "Joined": "2022-05-09"
+
+    },
+
+    {
+
+      "Emp_names": "Nithya Shree",
+
+      "Department": "Design",
+
+      "Role": "Graphic Designer",
+
+      "Salary": 62000,
+
+      "Joined": "2023-07-21"
+
+    },
+
+    {
+
+      "Emp_names": "Sathish Kumar",
+
+      "Department": "Support",
+
+      "Role": "Tech Support",
+
+      "Salary": 53000,
+
+      "Joined": "2021-08-13"
+
+    }
+
+  ];
+
+
+
+  const headers = Object.keys(data[0]);
+
+
+
+  return (
+
+    <div style={{ padding: '20px' }}>
+
+      <h2 style={{ textAlign: 'center' }}>Employee Details</h2>
+
+      <Table data={data} headers={headers} />
+
+    </div>
+
+  );
+
+}
+

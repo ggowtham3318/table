@@ -1,0 +1,40 @@
+body{
+background-color: #edeeef;
+color:rgb(26, 3, 3);
+font-size: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-image: linear-gradient(to right, rgb(211, 41, 41) , rgb(7, 32, 173));
+color: #edeeef;
+
+
+}
+table,td,th{
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px; 
+}
+
+.table{
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto;  
+}
+
+
+#srh:hover{
+    background-color:orange;
+    color: dimgray;
+}
+#rcb:hover{
+    background-color: rgb(202, 36, 36);
+    color: rgb(177, 207, 235);
+}
+.csk:hover{
+    background-color: yellow;
+    color: #d6a318;
+}
+#top:hover{
+    background-color: #1e263d;
+    color: aliceblue;
+}
