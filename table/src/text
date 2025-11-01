@@ -1,0 +1,113 @@
+//   const allPlayers = [...data.batter, ...data.bowler];
+
+//   // state variables
+//   const [role, setRole] = useState("");
+//   const [team, setTeam] = useState("");
+//   const [minMatches, setMinMatches] = useState("");
+
+//   // extract unique roles and teams
+//   const uniqueRoles = [...new Set(allPlayers.map((p) => p.role))];
+//   const uniqueTeams = [...new Set(allPlayers.map((p) => p.team))];
+
+//   // filtering logic
+//   const filteredPlayers = allPlayers.filter((player) => {
+
+//     const roleFilter = role === "" || player.role === role;
+//     const teamFilter = team === "" || player.team === team;
+//     return  roleFilter && teamFilter;
+//   });
+
+//   return (
+//     <div >
+
+//       <div style={{ display: "flex", gap: "15px", marginBottom: "20px" }}>
+//         {/* Role Dropdown */}
+//         <select value={role} onChange={(e) => setRole(e.target.value)}>
+//           <option value="">All Roles</option>
+//           {uniqueRoles.map((r, i) => (
+//             <option key={i} value={r}>
+//               {r}
+//             </option>
+//           ))}
+//         </select>
+
+//         {/* Team Dropdown */}
+//         <select value={team} onChange={(e) => setTeam(e.target.value)}>
+//           <option value="">All Teams</option>
+//           {uniqueTeams.map((t, i) => (
+//             <option key={i} value={t}>
+//               {t}
+//             </option>
+//           ))}
+//         </select>
+
+//         {/* Matches Filter */}
+//         <input
+//           type="number"
+//           placeholder="Min Matches"
+//           value={minMatches}
+//           onChange={(e) => setMinMatches(e.target.value)}
+//         />
+
+//         {/* Reset Button */}
+//         <button
+//           onClick={() => {
+//             setRole("");
+//             setTeam("");
+//             setMinMatches("");
+//           }}
+//         >
+//           Reset
+//         </button>
+//       </div>
+
+//       {/* Table */}
+//       <table border="1" cellPadding="10" style={{ width: "100%", textAlign: "center" }}>
+//         <thead >
+//           <tr>
+//             <th>ID</th>
+//             <th>Name</th>
+//             <th>Nickname</th>
+//             <th>Team</th>
+//             <th>Role</th>
+//             <th>Matches</th>
+//             <th>Runs / Wickets</th>
+//             <th>Average</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {filteredPlayers.map((p) => (
+//             <tr key={p.id}>
+//               <td>{p.id}</td>
+//               <td>{p.name}</td>
+//               <td>{p.nickname}</td>
+//               <td>{p.team}</td>
+//               <td>{p.role}</td>
+//               <td>{p.matches}</td>
+//               <td>{p.runs ? p.runs : p.wickets}</td>
+//               <td>{p.average}</td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+
+//       {filteredPlayers.length === 0 && <p>No players match your filter criteria.</p>}
+//     </div>
+//   );
+
+
+/* By Matches filter 
+
+      <select
+        className="matches"
+        value={matches}
+        onChange={(e) => setMatches(e.target.value)}>
+        {matchOptions.map((match, index) => (
+          <option key={index} value={match} className="option">
+            {match}
+          </option>
+        ))}
+      </select>*/
+
+
+      

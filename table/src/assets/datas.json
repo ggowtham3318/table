@@ -1,0 +1,85 @@
+{
+  "groups": [
+    {
+      "groupName": "Technology Division",
+      "departments": [
+        {
+          "departmentName": "Software Department",
+          "teams": [
+            {
+              "teamName": "Backend Team",
+              "employees": [
+                {
+                  "id": 1,
+                  "name": "Gowtham",
+                  "role": "Java Developer",
+                  "experience": "2 years",
+                  "skills": ["Spring Boot", "MySQL", "REST API"]
+                },
+                {
+                  "id": 2,
+                  "name": "Adhitya",
+                  "role": "Software Engineer",
+                  "experience": "1 year",
+                  "skills": ["Node.js", "MongoDB", "React"]
+                }
+              ]
+            },
+            {
+              "teamName": "Frontend Team",
+              "employees": [
+                {
+                  "id": 3,
+                  "name": "Nanda",
+                  "role": "React Developer",
+                  "experience": "1.5 years",
+                  "skills": ["React", "Tailwind CSS", "Redux"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "departmentName": "Testing Department",
+          "teams": [
+            {
+              "teamName": "QA Automation Team",
+              "employees": [
+                {
+                  "id": 4,
+                  "name": "Harish",
+                  "role": "QA Engineer",
+                  "experience": "3 years",
+                  "skills": ["Selenium", "JUnit", "Postman"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "groupName": "Operations Division",
+      "departments": [
+        {
+          "departmentName": "Support Department",
+          "teams": [
+            {
+              "teamName": "Customer Success Team",
+              "employees": [
+                {
+                  "id": 5,
+                  "name": "Anitha",
+                  "role": "Support Executive",
+                  "experience": "2 years",
+                  "skills": ["CRM", "Communication", "Problem Solving"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

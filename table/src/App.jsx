@@ -1,12 +1,14 @@
-import './App.css'
-import Fetch from './Fetch.jsx'
+import './App.jsx'
+import Filter from './components/Filter.jsx'
+
 
 function App() {
 
 
   return (
     <>
-      <Fetch/>
+     <Filter />
+      
     </>
   )
 }
